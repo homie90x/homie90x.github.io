@@ -8,7 +8,16 @@ body {
   background-size: cover;
   background-position: center; 
   background-attachment: scroll;
+  
+}
 
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55); /* Adjust opacity */
+    z-index: -1;
+    pointer-events: none;
 }
 
 #myVideo {
@@ -17,22 +26,9 @@ body {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+  object-fit: cover;
+  z-index: -2;
 }
-
-
-
-/* .loader-wrapper{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-} */
 
 .front-image {
   width: 200px;
@@ -53,7 +49,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #5eff00;   /* ← green, matching the text accent */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -71,7 +67,7 @@ body {
 .marquee-content {
   display: flex;
   white-space: nowrap;
-  font-family: 'arial', sans-serif;
+  font-family: monospace;
   font-size: 1rem;
   letter-spacing: 0.1em;
   color: #000000;
@@ -86,8 +82,8 @@ body {
 }
 
 @keyframes scrollLeft {
-0%   { transform: translateX(-30%); }
-100% { transform: translateX(50%); }
+  0%   { transform: translateX(-30%); }
+  100% { transform: translateX(50%); }
 }
  
 .left-to-right {
@@ -95,20 +91,18 @@ body {
 }
 
 a {
-  color:#ffffff;
-
+  color: #ffffff;
 }
-/* Bottom row: right to left */
+
 @keyframes scrollRight {
-0%   { transform: translateX(0%); }
-100% { transform: translateX(-50%); }
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
 }
  
 .right-to-left {
   animation: scrollRight 10s linear infinite;
 }
 
-/* ── Center logo ── */
 .loader-center {
   flex: 1;
   display: flex;
@@ -117,7 +111,7 @@ a {
 }
  
 .homepage-logo {
-  font-family: 'Times New Roman', serif;
+  font-family: monospace;
   font-size: 27px;
   color: #000000;
   letter-spacing: 0.1em;
@@ -135,14 +129,12 @@ a {
   align-items: center;
   padding: 24px 40px;
   z-index: 10000;
-  
 }
 
 .navbar-links {
   display: flex;
   gap: 24px;
   align-items: center;
-  
 }
 
 .navbar img {
@@ -154,8 +146,10 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  color:#5eff00;
+  color: #5eff00;
   padding-bottom: 10px;
+  position: relative;
+  z-index: 1;
 }
 
 .hero {
@@ -179,7 +173,6 @@ h1 {
   flex-direction: column;
   gap: 8px;
 }
-
 
 .hero-link:nth-child(1) { align-self: flex-start; }
 .hero-link:nth-child(2) { align-self: flex-end; }
@@ -216,3 +209,6 @@ h1 {
   gap: 1.5rem;
   flex-wrap: wrap;
 }
+
+
+

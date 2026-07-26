@@ -3,12 +3,131 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Projects — Mahathir</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <style>
+            .projects-grid {
+                position: relative;
+                z-index: 1;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 0;
+                padding: 0 40px 80px;
+            }
+
+            .project-card {
+                border: 1px solid #5eff00;
+                padding: 32px 28px;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                background: transparent;
+                transition: background 0.2s;
+            }
+
+            .project-card:hover {
+                background: rgba(94, 255, 0, 0.05);
+            }
+
+            .project-number {
+                font-family: monospace;
+                font-size: 0.75rem;
+                color: #5eff00;
+                opacity: 0.5;
+                letter-spacing: 0.2em;
+            }
+
+            .project-title {
+                font-family: monospace;
+                font-size: 1.4rem;
+                color: #5eff00;
+                font-weight: 400;
+                letter-spacing: 0.05em;
+            }
+
+            .project-desc {
+                font-family: monospace;
+                font-size: 0.8rem;
+                color: rgba(94, 255, 0, 0.65);
+                line-height: 1.7;
+                flex: 1;
+            }
+
+            .project-tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+
+            .project-tag {
+                font-family: monospace;
+                font-size: 0.65rem;
+                color: #5eff00;
+                border: 1px solid rgba(94, 255, 0, 0.4);
+                padding: 3px 8px;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+            }
+
+            .project-link {
+                font-family: monospace;
+                font-size: 0.75rem;
+                color: #5eff00;
+                text-decoration: none;
+                letter-spacing: 0.1em;
+                opacity: 0.7;
+                transition: opacity 0.2s;
+                align-self: flex-start;
+                margin-top: auto;
+            }
+
+            .project-link:hover {
+                opacity: 1;
+            }
+
+            @media (max-width: 900px) {
+                .projects-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+
+            @media (max-width: 600px) {
+                .projects-grid {
+                    grid-template-columns: 1fr;
+                    padding: 0 20px 60px;
+                }
+            }
+        </style>
     </head>
     <body>
+
+        <div class="loader-wrapper" id="loader">
+            <div class="marquee-track top">
+                <div class="marquee-content left-to-right">
+                    <span>PROJECTS ////// MAHATHIR MOSTAFA //////&nbsp;</span>
+                    <span>PROJECTS ////// MAHATHIR MOSTAFA //////&nbsp;</span>
+                    <span>PROJECTS ////// MAHATHIR MOSTAFA //////&nbsp;</span>
+                    <span>PROJECTS ////// MAHATHIR MOSTAFA //////&nbsp;</span>
+                    <span>PROJECTS ////// MAHATHIR MOSTAFA //////&nbsp;</span>
+                    <span>PROJECTS ////// MAHATHIR MOSTAFA //////&nbsp;</span>
+                </div>
+            </div>
+            <div class="loader-center">
+                <div class="homepage-logo">projects</div>
+            </div>
+            <div class="marquee-track bottom">
+                <div class="marquee-content right-to-left">
+                    <span>MAHATHIR MOSTAFA ////// PROJECTS //////&nbsp;</span>
+                    <span>MAHATHIR MOSTAFA ////// PROJECTS //////&nbsp;</span>
+                    <span>MAHATHIR MOSTAFA ////// PROJECTS //////&nbsp;</span>
+                    <span>MAHATHIR MOSTAFA ////// PROJECTS //////&nbsp;</span>
+                    <span>MAHATHIR MOSTAFA ////// PROJECTS //////&nbsp;</span>
+                    <span>MAHATHIR MOSTAFA ////// PROJECTS //////&nbsp;</span>
+                </div>
+            </div>
+        </div>
 
         <video autoplay muted loop id="myVideo">
             <source src="videos/100x.mp4" type="video/mp4">
@@ -17,22 +136,137 @@
         <nav class="navbar">
             <a href="https://linkedin.com/in/mahathir-mostafa-ab1927279/"><img src="images/git.png" alt="logo"></a>
             <a href="index.html">home</a>
-
             <div class="navbar-links">
                 <a href="https://github.com/homie90x"><img src="images/gitt.png" alt="github"></a>
             </div>
-
         </nav>
 
         <div class="hero">
-            <h1>PROJECTS</h1>>
+            <img src="" alt="computerlogo">
+            <h1>PROJECTS</h1>
         </div>
 
-        <section>
-            
+        <section class="projects-grid">
+
+            <div class="project-card">
+                <span class="project-number">01</span>
+                <div class="project-title">MORRISGO</div>
+                <p class="project-desc">
+                    A full-stack transportation platform built for residents of Morris, Minnesota to book rides
+                    between Morris and major cities including Minneapolis, St. Cloud, Alexandria, and Willmar.
+                    Features user authentication, driver registration, ride scheduling, and trip management,
+                    making regional transportation more accessible for students and local residents.
+                </p>
+                <div class="project-tags">
+                    <span class="project-tag">Next.js</span>
+                    <span class="project-tag">FastAPI</span>
+                    <span class="project-tag">PostgreSQL</span>
+                    <span class="project-tag">Tailwind</span>
+                </div>
+                <a href="#" class="project-link">view →</a>
+            </div>
+
+            <div class="project-card">
+                <span class="project-number">02</span>
+                <div class="project-title">SOCIALSYNC</div>
+                <p class="project-desc">
+                    A content management platform that allows creators to upload a photo or video once and publish
+                    it across multiple social media platforms simultaneously. Includes scheduling, media management,
+                    and platform-specific publishing workflows to streamline content creation.
+                </p>
+                <div class="project-tags">
+                    <span class="project-tag">Next.js</span>
+                    <span class="project-tag">TypeScript</span>
+                    <span class="project-tag">OAuth</span>
+                    <span class="project-tag">APIs</span>
+                </div>
+                <a href="#" class="project-link">view →</a>
+            </div>
+
+            <div class="project-card">
+                <span class="project-number">03</span>
+                <div class="project-title">NASA NEO DASHBOARD</div>
+                <p class="project-desc">
+                    An interactive data visualization dashboard built with R Shiny to explore NASA's Near-Earth
+                    Object dataset. Users can analyze asteroid size, velocity, miss distance, and hazardous
+                    classifications through interactive charts, filters, and statistical models.
+                </p>
+                <div class="project-tags">
+                    <span class="project-tag">R</span>
+                    <span class="project-tag">Shiny</span>
+                    <span class="project-tag">Data Science</span>
+                    <span class="project-tag">Statistics</span>
+                </div>
+                <a href="#" class="project-link">view →</a>
+            </div>
+
+            <div class="project-card">
+                <span class="project-number">04</span>
+                <div class="project-title">ASTROPHOTOGRAPHY PIPELINE</div>
+                <p class="project-desc">
+                    Developed image-processing tools for astronomical observations using Python and Astropy.
+                    Automated calibration, image alignment, stacking, and RGB composition of telescope FITS
+                    images as part of undergraduate astronomy research.
+                </p>
+                <div class="project-tags">
+                    <span class="project-tag">Python</span>
+                    <span class="project-tag">Astropy</span>
+                    <span class="project-tag">NumPy</span>
+                    <span class="project-tag">Research</span>
+                </div>
+                <a href="#" class="project-link">view →</a>
+            </div>
+
+            <div class="project-card">
+                <span class="project-number">05</span>
+                <div class="project-title">UFC FIGHT PREDICTOR</div>
+                <p class="project-desc">
+                    A machine learning project that predicts UFC fight outcomes using historical fighter statistics,
+                    striking accuracy, takedown metrics, and performance trends. Includes automated web scraping,
+                    data preprocessing, and predictive modeling.
+                </p>
+                <div class="project-tags">
+                    <span class="project-tag">Python</span>
+                    <span class="project-tag">Machine Learning</span>
+                    <span class="project-tag">Web Scraping</span>
+                    <span class="project-tag">Pandas</span>
+                </div>
+                <a href="#" class="project-link">view →</a>
+            </div>
+
+            <div class="project-card">
+                <span class="project-number">06</span>
+                <div class="project-title">PORTFOLIO WEBSITE</div>
+                <p class="project-desc">
+                    A custom-designed developer portfolio inspired by retro terminal interfaces. Features animated
+                    transitions, fullscreen video backgrounds, responsive layouts, and a minimalist cyberpunk
+                    aesthetic built entirely from scratch.
+                </p>
+                <div class="project-tags">
+                    <span class="project-tag">HTML</span>
+                    <span class="project-tag">CSS</span>
+                    <span class="project-tag">JavaScript</span>
+                    <span class="project-tag">UI Design</span>
+                </div>
+                <a href="#" class="project-link">view →</a>
+            </div>
+
         </section>
 
-        
-        <script src="" async defer></script>
+        <footer class="foottext">
+            <p>Mahathir Ahmed Mostafa</p>
+        </footer>
+
+        <script>
+            window.addEventListener("load", function () {
+                const loader = document.getElementById("loader");
+                const navbar = document.querySelector(".navbar");
+                navbar.style.visibility = "hidden";
+                setTimeout(() => {
+                    loader.style.display = "none";
+                    navbar.style.visibility = "visible";
+                }, 2500);
+            });
+        </script>
     </body>
 </html>

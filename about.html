@@ -3,12 +3,119 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>About — Mahathir</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <style>
+            .about-wrapper {
+                position: relative;
+                z-index: 1;
+                padding: 0 40px 80px;
+                display: flex;
+                flex-direction: column;
+                gap: 0;
+            }
+
+            .about-block {
+                border: 1px solid #5eff00;
+                padding: 40px 36px;
+                margin-top: -1px;
+            }
+
+            .about-label {
+                font-family: monospace;
+                font-size: 0.65rem;
+                color: rgba(94, 255, 0, 0.5);
+                letter-spacing: 0.25em;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+
+            .about-heading {
+                font-family: monospace;
+                font-size: 1.6rem;
+                color: #5eff00;
+                font-weight: 400;
+                margin-bottom: 16px;
+                letter-spacing: 0.04em;
+            }
+
+            .about-text {
+                font-family: monospace;
+                font-size: 0.85rem;
+                color: rgba(94, 255, 0, 0.7);
+                line-height: 1.9;
+                max-width: 720px;
+            }
+
+            .skills-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+                gap: 12px;
+                margin-top: 20px;
+            }
+
+            .skill-item {
+                font-family: monospace;
+                font-size: 0.75rem;
+                color: #5eff00;
+                border: 1px solid rgba(94, 255, 0, 0.35);
+                padding: 8px 14px;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                text-align: center;
+            }
+
+            .two-col {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 0;
+            }
+
+            .two-col .about-block {
+                margin-top: 0;
+                margin-left: -1px;
+            }
+
+            .two-col .about-block:first-child {
+                margin-left: 0;
+            }
+
+            @media (max-width: 700px) {
+                .about-wrapper { padding: 0 20px 60px; }
+                .two-col { grid-template-columns: 1fr; }
+                .two-col .about-block { margin-left: 0; margin-top: -1px; }
+            }
+        </style>
     </head>
     <body>
+
+        <div class="loader-wrapper" id="loader">
+            <div class="marquee-track top">
+                <div class="marquee-content left-to-right">
+                    <span>ABOUT ME ////// MAHATHIR MOSTAFA //////&nbsp;</span>
+                    <span>ABOUT ME ////// MAHATHIR MOSTAFA //////&nbsp;</span>
+                    <span>ABOUT ME ////// MAHATHIR MOSTAFA //////&nbsp;</span>
+                    <span>ABOUT ME ////// MAHATHIR MOSTAFA //////&nbsp;</span>
+                    <span>ABOUT ME ////// MAHATHIR MOSTAFA //////&nbsp;</span>
+                    <span>ABOUT ME ////// MAHATHIR MOSTAFA //////&nbsp;</span>
+                </div>
+            </div>
+            <div class="loader-center">
+                <div class="homepage-logo">about me</div>
+            </div>
+            <div class="marquee-track bottom">
+                <div class="marquee-content right-to-left">
+                    <span>MAHATHIR MOSTAFA ////// ABOUT ME //////&nbsp;</span>
+                    <span>MAHATHIR MOSTAFA ////// ABOUT ME //////&nbsp;</span>
+                    <span>MAHATHIR MOSTAFA ////// ABOUT ME //////&nbsp;</span>
+                    <span>MAHATHIR MOSTAFA ////// ABOUT ME //////&nbsp;</span>
+                    <span>MAHATHIR MOSTAFA ////// ABOUT ME //////&nbsp;</span>
+                    <span>MAHATHIR MOSTAFA ////// ABOUT ME //////&nbsp;</span>
+                </div>
+            </div>
+        </div>
 
         <video autoplay muted loop id="myVideo">
             <source src="videos/99x.mp4" type="video/mp4">
@@ -17,22 +124,98 @@
         <nav class="navbar">
             <a href="https://linkedin.com/in/mahathir-mostafa-ab1927279/"><img src="images/git.png" alt="logo"></a>
             <a href="index.html">HOME</a>
-
             <div class="navbar-links">
                 <a href="https://github.com/homie90x"><img src="images/gitt.png" alt="github"></a>
             </div>
-
         </nav>
 
         <div class="hero">
-            <h1>ABOUT ME</h1>>
+            <h1>ABOUT ME</h1>
         </div>
 
-        <section>
-            
+        <section class="about-wrapper">
+
+            <!-- Intro -->
+            <div class="about-block">
+                <div class="about-label">Introduction</div>
+                <div class="about-heading">Hi, I'm Mahathir.</div>
+                <p class="about-text">
+                    Write a sentence or two about who you are here — your focus, what drives you, and what kind of work you want to do. Keep it honest and specific rather than generic.
+                </p>
+            </div>
+
+            <!-- Two columns: Education + Location/Status -->
+            <div class="two-col">
+                <div class="about-block">
+                    <div class="about-label">Education</div>
+                    <div class="about-heading">Where I Studied</div>
+                    <p class="about-text">
+                        Your degree, institution, and year — or where you're currently studying. Any relevant coursework or focus areas worth noting.
+                    </p>
+                </div>
+                <div class="about-block">
+                    <div class="about-label">Currently</div>
+                    <div class="about-heading">What I'm Up To</div>
+                    <p class="about-text">
+                        What you're working on right now — a job, an internship, a personal project, or something you're learning. Keep it present tense.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Skills -->
+            <div class="about-block">
+                <div class="about-label">Skills</div>
+                <div class="about-heading">Tools & Technologies</div>
+                <div class="skills-grid">
+                    <div class="skill-item">Python</div>
+                    <div class="skill-item">JavaScript</div>
+                    <div class="skill-item">React</div>
+                    <div class="skill-item">Node.js</div>
+                    <div class="skill-item">C++</div>
+                    <div class="skill-item">SQL</div>
+                    <div class="skill-item">HTML / CSS</div>
+                    <div class="skill-item">Git</div>
+                    <div class="skill-item">Linux</div>
+                    <div class="skill-item">TypeScript</div>
+                    <div class="skill-item">MongoDB</div>
+                    <div class="skill-item">REST APIs</div>
+                </div>
+            </div>
+
+            <!-- Interests -->
+            <div class="about-block">
+                <div class="about-label">Interests</div>
+                <div class="about-heading">Beyond the Code</div>
+                <p class="about-text">
+                    What else you care about outside of software — hobbies, side interests, things you'd talk about for hours. This is where a portfolio gets a personality.
+                </p>
+            </div>
+
+            <!-- Contact -->
+            <div class="about-block">
+                <div class="about-label">Contact</div>
+                <div class="about-heading">Get in Touch</div>
+                <p class="about-text">
+                    Open to opportunities, collaborations, or just a good conversation. Reach me at <a href="mailto:your@email.com" style="color:#5eff00;">your@email.com</a> or connect on <a href="https://linkedin.com/in/mahathir-mostafa-ab1927279/" style="color:#5eff00;">LinkedIn</a>.
+                </p>
+            </div>
+
         </section>
 
-        
-        <script src="" async defer></script>
+        <footer class="foottext">
+            <p>Mahathir Ahmed Mostafa</p>
+        </footer>
+
+        <script>
+            window.addEventListener("load", function () {
+                const loader = document.getElementById("loader");
+                const navbar = document.querySelector(".navbar");
+                navbar.style.visibility = "hidden";
+                setTimeout(() => {
+                    loader.style.display = "none";
+                    navbar.style.visibility = "visible";
+                }, 2500);
+            });
+        </script>
     </body>
 </html>

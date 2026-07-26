@@ -3,12 +3,155 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Experience — Mahathir</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <style>
+            .exp-wrapper {
+                position: relative;
+                z-index: 1;
+                padding: 0 40px 80px;
+            }
+
+            .exp-block {
+                border: 1px solid #5eff00;
+                padding: 36px;
+                margin-top: -1px;
+                display: grid;
+                grid-template-columns: 200px 1fr;
+                gap: 32px;
+                transition: background 0.2s;
+            }
+
+            .exp-block:hover {
+                background: rgba(94, 255, 0, 0.04);
+            }
+
+            .exp-meta {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                padding-top: 4px;
+            }
+
+            .exp-date {
+                font-family: monospace;
+                font-size: 0.7rem;
+                color: rgba(94, 255, 0, 0.5);
+                letter-spacing: 0.15em;
+                text-transform: uppercase;
+            }
+
+            .exp-type {
+                font-family: monospace;
+                font-size: 0.65rem;
+                color: #5eff00;
+                border: 1px solid rgba(94, 255, 0, 0.4);
+                padding: 3px 8px;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                align-self: flex-start;
+            }
+
+            .exp-content {}
+
+            .exp-role {
+                font-family: monospace;
+                font-size: 1.25rem;
+                color: #5eff00;
+                font-weight: 400;
+                letter-spacing: 0.04em;
+                margin-bottom: 6px;
+            }
+
+            .exp-company {
+                font-family: monospace;
+                font-size: 0.85rem;
+                color: rgba(94, 255, 0, 0.6);
+                letter-spacing: 0.08em;
+                margin-bottom: 18px;
+            }
+
+            .exp-desc {
+                font-family: monospace;
+                font-size: 0.8rem;
+                color: rgba(94, 255, 0, 0.65);
+                line-height: 1.9;
+            }
+
+            .exp-bullets {
+                list-style: none;
+                padding: 0;
+                margin: 12px 0 0;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .exp-bullets li {
+                font-family: monospace;
+                font-size: 0.78rem;
+                color: rgba(94, 255, 0, 0.65);
+                line-height: 1.7;
+                padding-left: 16px;
+                position: relative;
+            }
+
+            .exp-bullets li::before {
+                content: '//';
+                position: absolute;
+                left: 0;
+                color: rgba(94, 255, 0, 0.35);
+                font-size: 0.65rem;
+            }
+
+            /* Section dividers */
+            .exp-section-label {
+                position: relative;
+                z-index: 1;
+                font-family: monospace;
+                font-size: 0.65rem;
+                color: rgba(94, 255, 0, 0.4);
+                letter-spacing: 0.3em;
+                text-transform: uppercase;
+                padding: 28px 40px 12px;
+            }
+
+            @media (max-width: 700px) {
+                .exp-wrapper { padding: 0 20px 60px; }
+                .exp-block { grid-template-columns: 1fr; gap: 12px; }
+                .exp-section-label { padding: 20px 20px 10px; }
+            }
+        </style>
     </head>
     <body>
+
+        <div class="loader-wrapper" id="loader">
+            <div class="marquee-track top">
+                <div class="marquee-content left-to-right">
+                    <span>EXPERIENCE ////// MAHATHIR MOSTAFA //////&nbsp;</span>
+                    <span>EXPERIENCE ////// MAHATHIR MOSTAFA //////&nbsp;</span>
+                    <span>EXPERIENCE ////// MAHATHIR MOSTAFA //////&nbsp;</span>
+                    <span>EXPERIENCE ////// MAHATHIR MOSTAFA //////&nbsp;</span>
+                    <span>EXPERIENCE ////// MAHATHIR MOSTAFA //////&nbsp;</span>
+                    <span>EXPERIENCE ////// MAHATHIR MOSTAFA //////&nbsp;</span>
+                </div>
+            </div>
+            <div class="loader-center">
+                <div class="homepage-logo">experience</div>
+            </div>
+            <div class="marquee-track bottom">
+                <div class="marquee-content right-to-left">
+                    <span>MAHATHIR MOSTAFA ////// EXPERIENCE //////&nbsp;</span>
+                    <span>MAHATHIR MOSTAFA ////// EXPERIENCE //////&nbsp;</span>
+                    <span>MAHATHIR MOSTAFA ////// EXPERIENCE //////&nbsp;</span>
+                    <span>MAHATHIR MOSTAFA ////// EXPERIENCE //////&nbsp;</span>
+                    <span>MAHATHIR MOSTAFA ////// EXPERIENCE //////&nbsp;</span>
+                    <span>MAHATHIR MOSTAFA ////// EXPERIENCE //////&nbsp;</span>
+                </div>
+            </div>
+        </div>
 
         <video autoplay muted loop id="myVideo">
             <source src="videos/110x.mp4" type="video/mp4">
@@ -17,22 +160,135 @@
         <nav class="navbar">
             <a href="https://linkedin.com/in/mahathir-mostafa-ab1927279/"><img src="images/git.png" alt="logo"></a>
             <a href="index.html">home</a>
-
             <div class="navbar-links">
                 <a href="https://github.com/homie90x"><img src="images/gitt.png" alt="github"></a>
             </div>
-
         </nav>
 
         <div class="hero">
-            <h1 style="font-size: 30vh;">EXPERIENCE</h1>>
+            <h1>EXPERIENCE</h1>
         </div>
 
-        <section>
-            
-        </section>
+        <!-- Education -->
+        <div class="exp-section-label">Work</div>
+        <section class="exp-wrapper">
 
-        
-        <script src="" async defer></script>
+            <div class="exp-block">
+                <div class="exp-meta">
+                    <span class="exp-date">May 2026 – Present</span>
+                    <span class="exp-type">Internship</span>
+            </div>
+        <div class="exp-content">
+            <div class="exp-role">Marketing & Web Development Intern</div>
+            <div class="exp-company">Office of Residential & Community Life · University of Minnesota Morris</div>
+            <ul class="exp-bullets">
+                <li>Develop and maintain university websites using Drupal CMS, HTML, CSS, JavaScript, and Git to improve functionality, accessibility, and content management workflows.</li>
+                <li>Implement website updates, manage version control, and collaborate with university staff to deliver reliable web solutions across multiple pages.</li>
+                <li>Manage social media strategy and digital content creation, contributing to a 70% increase in page views, engagement, and follower growth through analytics-driven campaigns.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="exp-block">
+        <div class="exp-meta">
+            <span class="exp-date">May 2026 – Present</span>
+            <span class="exp-type">Internship</span>
+        </div>
+        <div class="exp-content">
+            <div class="exp-role">Software Development Intern</div>
+            <div class="exp-company">University of Minnesota Morris</div>
+            <ul class="exp-bullets">
+                <li>Developed an automated syllabus parsing application that extracts course information from PDF documents into structured Excel spreadsheets.</li>
+                <li>Built the parsing pipeline using Python, PyPDF2, Pandas, and Regular Expressions to accurately identify course schedules, assignments, grading policies, and metadata.</li>
+                <li>Eliminated manual data entry for faculty and staff, significantly reducing processing time while improving consistency and accuracy.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="exp-block">
+        <div class="exp-meta">
+            <span class="exp-date">Mar 2024 – Present</span>
+            <span class="exp-type">Research</span>
+        </div>
+        <div class="exp-content">
+            <div class="exp-role">Research Assistant</div>
+            <div class="exp-company">Office of Physics & Astronomy · University of Minnesota Morris</div>
+            <ul class="exp-bullets">
+                <li>Develop image-processing pipelines for astronomical observations using Python, Astropy, NumPy, and AstroAlign.</li>
+                <li>Assist with upgrades to the university's 16-inch Meade LX200 telescope, including imaging hardware integration and automated focusing systems.</li>
+                <li>Process and calibrate FITS images through stacking, alignment, and RGB composition while supporting undergraduate astronomy research.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="exp-block">
+        <div class="exp-meta">
+            <span class="exp-date">Aug 2024 – Present</span>
+            <span class="exp-type">Leadership</span>
+        </div>
+        <div class="exp-content">
+            <div class="exp-role">Resident Advisor (Building Advisor)</div>
+            <div class="exp-company">Residential & Community Life · University of Minnesota Morris</div>
+            <ul class="exp-bullets">
+                <li>Support residents by fostering an inclusive community, organizing educational programming, and responding to student concerns.</li>
+                <li>Coordinate campus events and collaborate with university staff to enhance student engagement and residential life.</li>
+                <li>Develop leadership, conflict resolution, crisis response, and community-building skills while mentoring diverse student populations.</li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+
+
+<div class="exp-section-label">Leadership</div>
+<section class="exp-wrapper" style="padding-top:0;">
+
+    <div class="exp-block">
+        <div class="exp-meta">
+            <span class="exp-date">2025 – Present</span>
+            <span class="exp-type">President</span>
+        </div>
+        <div class="exp-content">
+            <div class="exp-role">President</div>
+            <div class="exp-company">International Student Association</div>
+            <p class="exp-desc">
+                Lead the executive board in planning campus-wide cultural events, managing organizational
+                initiatives, and representing international students while coordinating with university administration.
+            </p>
+        </div>
+    </div>
+
+    <div class="exp-block">
+        <div class="exp-meta">
+            <span class="exp-date">2024 – Present</span>
+            <span class="exp-type">Teaching</span>
+        </div>
+        <div class="exp-content">
+            <div class="exp-role">Statistics Teaching Assistant & Tutor</div>
+            <div class="exp-company">University of Minnesota Morris</div>
+            <p class="exp-desc">
+                Assist students with statistics coursework, provide one-on-one tutoring, and help reinforce
+                core concepts in probability, statistical analysis, and data interpretation.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+        <footer class="foottext">
+            <p>Mahathir Ahmed Mostafa</p>
+        </footer>
+
+        <script>
+            window.addEventListener("load", function () {
+                const loader = document.getElementById("loader");
+                const navbar = document.querySelector(".navbar");
+                navbar.style.visibility = "hidden";
+                setTimeout(() => {
+                    loader.style.display = "none";
+                    navbar.style.visibility = "visible";
+                }, 2500);
+            });
+        </script>
     </body>
 </html>
