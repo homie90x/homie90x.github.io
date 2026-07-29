@@ -6,6 +6,8 @@
         <title>About — Mahathir</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- TODO: replace with your own favicon -->
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
         <style>
             .about-wrapper {
@@ -25,7 +27,7 @@
 
             .about-label {
                 font-family: monospace;
-                font-size: 0.65rem;
+                font-size: 0.75rem;
                 color: rgba(94, 255, 0, 0.5);
                 letter-spacing: 0.25em;
                 text-transform: uppercase;
@@ -34,7 +36,7 @@
 
             .about-heading {
                 font-family: monospace;
-                font-size: 1.6rem;
+                font-size: 1.8rem;
                 color: #5eff00;
                 font-weight: 400;
                 margin-bottom: 16px;
@@ -43,7 +45,7 @@
 
             .about-text {
                 font-family: monospace;
-                font-size: 0.85rem;
+                font-size: 1.05rem;
                 color: rgba(94, 255, 0, 0.7);
                 line-height: 1.9;
                 max-width: 720px;
@@ -58,7 +60,7 @@
 
             .skill-item {
                 font-family: monospace;
-                font-size: 0.75rem;
+                font-size: 0.9rem;
                 color: #5eff00;
                 border: 1px solid rgba(94, 255, 0, 0.35);
                 padding: 8px 14px;
@@ -82,10 +84,19 @@
                 margin-left: 0;
             }
 
+            @media (max-width: 900px) {
+                .skills-grid {
+                    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+                }
+            }
+
             @media (max-width: 700px) {
                 .about-wrapper { padding: 0 20px 60px; }
                 .two-col { grid-template-columns: 1fr; }
                 .two-col .about-block { margin-left: 0; margin-top: -1px; }
+                .about-block { padding: 28px 22px; }
+                .about-heading { font-size: 1.4rem; }
+                .about-text { font-size: 1rem; }
             }
         </style>
     </head>
@@ -130,6 +141,8 @@
         </nav>
 
         <div class="hero">
+            <!-- TODO: replace with a photo or graphic for the about page -->
+            <img src="images/me.png" alt="About me placeholder image" class="hero-image">
             <h1>ABOUT ME</h1>
         </div>
 
@@ -140,7 +153,7 @@
                 <div class="about-label">Introduction</div>
                 <div class="about-heading">Hi, I'm Mahathir.</div>
                 <p class="about-text">
-                    Write a sentence or two about who you are here — your focus, what drives you, and what kind of work you want to do. Keep it honest and specific rather than generic.
+                    I'm Mahathir Ahmed Mostafa, a Computer Science student at the University of Minnesota Morris with minors in Data Science and Statistics. I enjoy building software that solves real problems, from AI-powered applications to full-stack web platforms, while combining technical skills with creative design and storytelling.
                 </p>
             </div>
 
@@ -150,14 +163,14 @@
                     <div class="about-label">Education</div>
                     <div class="about-heading">Where I Studied</div>
                     <p class="about-text">
-                        Your degree, institution, and year — or where you're currently studying. Any relevant coursework or focus areas worth noting.
+                        I'm pursuing a Bachelor of Arts in Computer Science with minors in Data Science and Statistics at the University of Minnesota Morris. Alongside my coursework, I've conducted astronomy research, served as a teaching assistant, and worked on projects involving software engineering, machine learning, and data visualization.
                     </p>
                 </div>
                 <div class="about-block">
                     <div class="about-label">Currently</div>
                     <div class="about-heading">What I'm Up To</div>
                     <p class="about-text">
-                        What you're working on right now — a job, an internship, a personal project, or something you're learning. Keep it present tense.
+                        I'm currently working as a Marketing Intern for Residential Life at UMN Morris, where I build digital content and develop web tools to improve student engagement. Outside of work, I'm building AI-powered software projects, expanding my full-stack development skills, and creating technical content to help launch my career as a software engineer.
                     </p>
                 </div>
             </div>
@@ -168,17 +181,23 @@
                 <div class="about-heading">Tools & Technologies</div>
                 <div class="skills-grid">
                     <div class="skill-item">Python</div>
+                    <div class="skill-item">Java</div>
                     <div class="skill-item">JavaScript</div>
+                    <div class="skill-item">TypeScript</div>
+                    <div class="skill-item">Next.js</div>
                     <div class="skill-item">React</div>
                     <div class="skill-item">Node.js</div>
-                    <div class="skill-item">C++</div>
+                    <div class="skill-item">FastAPI</div>
+                    <div class="skill-item">PostgreSQL</div>
                     <div class="skill-item">SQL</div>
                     <div class="skill-item">HTML / CSS</div>
                     <div class="skill-item">Git</div>
-                    <div class="skill-item">Linux</div>
-                    <div class="skill-item">TypeScript</div>
-                    <div class="skill-item">MongoDB</div>
-                    <div class="skill-item">REST APIs</div>
+                    <div class="skill-item">Tailwind CSS</div>
+                    <div class="skill-item">Prisma</div>
+                    <div class="skill-item">R</div>
+                    <div class="skill-item">Adobe Premiere Pro</div>
+                    <div class="skill-item">Photoshop</div>
+                    <div class="skill-item">After Effects</div>
                 </div>
             </div>
 
@@ -187,7 +206,7 @@
                 <div class="about-label">Interests</div>
                 <div class="about-heading">Beyond the Code</div>
                 <p class="about-text">
-                    What else you care about outside of software — hobbies, side interests, things you'd talk about for hours. This is where a portfolio gets a personality.
+                    Beyond programming, I enjoy photography, videography, and creating content that makes technology more accessible. You'll also find me lifting at the gym, training in martial arts, exploring AI, or capturing campus life through my camera. I enjoy combining creativity with technology in everything I build.
                 </p>
             </div>
 
@@ -196,7 +215,10 @@
                 <div class="about-label">Contact</div>
                 <div class="about-heading">Get in Touch</div>
                 <p class="about-text">
-                    Open to opportunities, collaborations, or just a good conversation. Reach me at <a href="mailto:your@email.com" style="color:#5eff00;">your@email.com</a> or connect on <a href="https://linkedin.com/in/mahathir-mostafa-ab1927279/" style="color:#5eff00;">LinkedIn</a>.
+                    I'm always interested in software engineering internships, research opportunities, and ambitious projects. Feel free to reach out at
+                    <a href="mailto:mosta044@umn.edu" style="color:#5eff00;">mosta044@umn.edu</a>
+                    or connect with me on
+                    <a href="https://linkedin.com/in/mahathir-mostafa-ab1927279/" style="color:#5eff00;">LinkedIn</a>.
                 </p>
             </div>
 

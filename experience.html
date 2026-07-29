@@ -6,6 +6,8 @@
         <title>Experience — Mahathir</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- TODO: replace with your own favicon -->
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
         <style>
             .exp-wrapper {
@@ -37,7 +39,7 @@
 
             .exp-date {
                 font-family: monospace;
-                font-size: 0.7rem;
+                font-size: 0.8rem;
                 color: rgba(94, 255, 0, 0.5);
                 letter-spacing: 0.15em;
                 text-transform: uppercase;
@@ -45,7 +47,7 @@
 
             .exp-type {
                 font-family: monospace;
-                font-size: 0.65rem;
+                font-size: 0.75rem;
                 color: #5eff00;
                 border: 1px solid rgba(94, 255, 0, 0.4);
                 padding: 3px 8px;
@@ -58,7 +60,7 @@
 
             .exp-role {
                 font-family: monospace;
-                font-size: 1.25rem;
+                font-size: 1.4rem;
                 color: #5eff00;
                 font-weight: 400;
                 letter-spacing: 0.04em;
@@ -67,7 +69,7 @@
 
             .exp-company {
                 font-family: monospace;
-                font-size: 0.85rem;
+                font-size: 0.95rem;
                 color: rgba(94, 255, 0, 0.6);
                 letter-spacing: 0.08em;
                 margin-bottom: 18px;
@@ -75,7 +77,7 @@
 
             .exp-desc {
                 font-family: monospace;
-                font-size: 0.8rem;
+                font-size: 0.95rem;
                 color: rgba(94, 255, 0, 0.65);
                 line-height: 1.9;
             }
@@ -91,7 +93,7 @@
 
             .exp-bullets li {
                 font-family: monospace;
-                font-size: 0.78rem;
+                font-size: 0.9rem;
                 color: rgba(94, 255, 0, 0.65);
                 line-height: 1.7;
                 padding-left: 16px;
@@ -103,7 +105,7 @@
                 position: absolute;
                 left: 0;
                 color: rgba(94, 255, 0, 0.35);
-                font-size: 0.65rem;
+                font-size: 0.75rem;
             }
 
             /* Section dividers */
@@ -111,7 +113,7 @@
                 position: relative;
                 z-index: 1;
                 font-family: monospace;
-                font-size: 0.65rem;
+                font-size: 0.75rem;
                 color: rgba(94, 255, 0, 0.4);
                 letter-spacing: 0.3em;
                 text-transform: uppercase;
@@ -120,8 +122,10 @@
 
             @media (max-width: 700px) {
                 .exp-wrapper { padding: 0 20px 60px; }
-                .exp-block { grid-template-columns: 1fr; gap: 12px; }
+                .exp-block { grid-template-columns: 1fr; gap: 12px; padding: 24px 20px; }
                 .exp-section-label { padding: 20px 20px 10px; }
+                .exp-role { font-size: 1.2rem; }
+                .exp-desc, .exp-bullets li { font-size: 0.85rem; }
             }
         </style>
     </head>
@@ -166,6 +170,8 @@
         </nav>
 
         <div class="hero">
+            <!-- TODO: replace with a photo or graphic for the experience page -->
+            <img src="images/exp.png" alt="Experience placeholder image" class="hero-image">
             <h1>EXPERIENCE</h1>
         </div>
 
